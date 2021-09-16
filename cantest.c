@@ -74,7 +74,7 @@ int main(int argc, char **argv)
 	int i;
 		
 	/* CAN message to be sent out */
-	unsigned char buff[] = "7DF#0201050000000000";
+	unsigned char buff[] = "123#AABBCC0000000000";
 
 	fprintf(stderr,"CAN testing\n");
 	
