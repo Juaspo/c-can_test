@@ -74,7 +74,7 @@ int main(int argc, char **argv)
 	int i;
 		
 	/* CAN message to be sent out */
-	unsigned char buff[] = "123#AABBCC0000000000";
+	unsigned char buff[] = "12345678#AABBCC0000000000";
 
 	fprintf(stderr,"CAN testing\n");
 	
@@ -118,7 +118,7 @@ int main(int argc, char **argv)
 	}
 
 	/* send frame */
-	for(i=0;i<100;i++)
+	for(i=0;i<3;i++)
 	{
 		if ((nbytes = write(s, &frame, sizeof(frame))) != sizeof(frame)) {
 			perror("write");
