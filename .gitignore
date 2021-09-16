@@ -1,1 +1,3 @@
 cantest
+resources/logs/*.log
+!resources/logs/*_short.log
